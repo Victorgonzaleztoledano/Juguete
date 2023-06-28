@@ -23,6 +23,13 @@ public class Juguete {
         if ( precioBase < 0) throw new EinvalidPropertyException("Indica un precio correcto");
         else this.precioBase = precioBase;
     }
+    public void imprimirJuguete() {
+        System.out.println("Nombre: " + nombre);
+        if (nJugadores > 0) System.out.println("Apto para: " + nJugadores + " jugadores");
+        System.out.println("Edad mínima: " + edadMinima);
+        System.out.println("Precio: " + precioBase);
+
+    }
 
     public String getNombre() {
         return nombre;
